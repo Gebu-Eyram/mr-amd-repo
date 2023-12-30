@@ -56,7 +56,7 @@ const form = document.forms['submit-to-google-sheet']
 form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {popup.style.bottom = "20%";
+      .then(response => {popup.style.bottom = "50%";
         setTimeout(() => {
             popup.style.bottom = "-50%"
         }, 5000);
