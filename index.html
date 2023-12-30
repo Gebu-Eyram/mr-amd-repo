@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
    
     <script src="script.js" defer></script>
 
@@ -228,7 +229,7 @@
 
       <section id="contactform">
         
-        <div class="left">
+        <div class="left">  
             <h2>
                 Send me a message.   
            </h2>
@@ -238,10 +239,10 @@
         </div>
 
         <div class="right">
-            <form action="post">
-                <input type="text" name="username" placeholder="Your name" required >
-                <input type="email" name="email" placeholder="Your email" required >
-                <textarea name="message" placeholder="Type mesage here..." id  rows="6"></textarea>
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your name" required >
+                <input type="email" name="Email" placeholder="Your email" required >
+                <textarea name="Message" placeholder="Type mesage here..." id  rows="6" required></textarea>
                 <button class="btn-submit" type="submit">Send <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
 
             </form>
@@ -249,5 +250,12 @@
     </section>
 
    </div>
+   <section class="popupcontainer">
+    <div class="popup">
+        <h2>Message has been delivered successfully!</h2>
+        <button class="okay">Ok</button>
+       </div>
+   </section>
+   
 </body>
 </html>

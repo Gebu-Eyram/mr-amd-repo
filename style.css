@@ -538,7 +538,36 @@ a .picture{
 }
 h2{color: #1e3250;
 }
+.popupcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.popup{
+    background: white;
+    position: fixed;
+    font-size: 70%;
+    padding: 50px 20px 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease-in;
+    bottom: -50%;
+    text-align: center;
+    margin: 0 auto;
 
+}
+.popup h2{
+    color: #1e3250;
+}
+.popup button{
+    transition: all 0.2s ease-in;
+}
+.popup button:hover{
+    background-color: #36588b;
+}
 
 
 
